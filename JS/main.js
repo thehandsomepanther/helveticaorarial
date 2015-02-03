@@ -43,6 +43,13 @@ function endGame() {
     }, 500);
 }
 
+function restartGame() {
+    num_guesses = 0;
+    num_correct = 0;
+    $('.endGame').hide();
+    $('.game').fadeIn();
+}
+
 $(document).ready(function () {
     var num = genRandomNumber();
 
@@ -61,7 +68,6 @@ $(document).ready(function () {
     });
 
     $('.helvetica-button').click(function () {
-        if (num_guesses < 10){ 
         if (genHelveticaOrArial(num) === "Helvetica") {
             num = genRandomNumber();
             reset(num);
@@ -69,13 +75,15 @@ $(document).ready(function () {
         } else {
             num = genRandomNumber();
             reset(num);
-        } num_guesses++; } else { 
+        } 
+        num_guesses++;
+        
+        if (num_guesses >= 10) { 
             endGame();
         }
     });
 
     $('.arial-button').click(function () {
-        if (num_guesses < 10) {
         if (genHelveticaOrArial(num) === "Helvetica") {
             num = genRandomNumber();
             reset(num);
@@ -85,9 +93,13 @@ $(document).ready(function () {
             num_correct++;
         }
         num_guesses++; 
-        } else {
+        if (num_guesses >= 10) {
             endGame();
         }
+    });
+    
+    $('.endGame-button').click(function() {
+        restartGame(); 
     });
 
 });

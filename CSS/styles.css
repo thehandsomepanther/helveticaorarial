@@ -101,21 +101,30 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: rgb(255, 255, 255);
     border-radius: 100%;
     transition: all .5s linear;
     margin-top: 8%;
 }
 
-.endGame-text{
+.endGame-text {
     font-family: "Playfair Display", cursive;
     font-weight: 700;
     font-style: italic;
-    font-size: 200px;
+    font-size: 150px;
     color: rgb(0, 0, 0);
-    position: relative;  
+    position: relative;
     text-align: center;
-    top: 95px;
+    top: 90px;
+}
+
+.endGame-button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100px;
+    margin: auto;
+    top: 450px;
 }
