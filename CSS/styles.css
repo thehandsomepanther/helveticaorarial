@@ -1,0 +1,121 @@
+* {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.intro {
+    text-align: center;
+    font-size: 900%;
+    line-height: 110%;
+    position: relative;
+    margin-top: 8%;
+}
+
+.or-circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    transition: all .5s linear;
+}
+
+.or-circle-text {
+    font-family: "Playfair Display", cursive;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50%;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.arial {
+    position: relative;
+    top: 150px;
+    font-family: "Arial";
+}
+
+.play-button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100px;
+    margin: auto;
+    top: 450px;
+}
+
+.game-button {
+    background-color: black;
+    border-width: thick;
+    color: white;
+    border-color: white;
+}
+
+.game-button:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.description {
+    text-align: left;
+    width: 400px;
+    font-size: 15%;
+    line-height: normal;
+    margin-left: 35%;
+}
+
+.phrase {
+    text-align: center;
+    font-size: 900%;
+    line-height: 110%;
+    margin-top: 8%;
+}
+
+.guess-buttons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 600px;
+    margin: auto;
+    bottom: 100px;
+}
+
+.helvetica-button {
+    width: 200px;
+    margin-right: 195px
+}
+
+.arial-button {
+    width: 200px;
+}
+
+.endGame {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    transition: all .5s linear;
+    margin-top: 8%;
+}
+
+.endGame-text{
+    font-family: "Playfair Display", cursive;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 200px;
+    color: rgb(0, 0, 0);
+    position: relative;  
+    text-align: center;
+    top: 95px;
+}
