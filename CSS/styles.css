@@ -96,6 +96,15 @@ body {
     width: 200px;
 }
 
+.your-score {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: -60px;
+    font-size: 40px;
+}
+
 .endGame {
     position: absolute;
     left: 0;
