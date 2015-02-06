@@ -7,12 +7,46 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+.nav {
+    left: 5%;
+    width: 90%;
+    position: absolute;
+    height: 60px;
+    border-bottom: 5px solid white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    position: relative;
+    display: inline;
+    padding-right: 50px;
+    top: 15px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #ccc;
+}
+
+a:active {
+    color: #ccc;
+}
+
 .intro {
     text-align: center;
     font-size: 900%;
     line-height: 110%;
     position: relative;
-    margin-top: 8%;
+    top: 100px;
 }
 
 .or-circle {
@@ -71,20 +105,24 @@ body {
     margin-left: 35%;
 }
 
+.game {
+    position: relative;
+    top: 100px;
+}
+
 .phrase {
     text-align: center;
     font-size: 900%;
     line-height: 110%;
-    margin-top: 8%;
 }
 
 .guess-buttons {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     width: 600px;
     margin: auto;
-    bottom: 100px;
+    top: 300px;
 }
 
 .helvetica-button {
@@ -96,26 +134,33 @@ body {
     width: 200px;
 }
 
-.your-score {
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: -15%;
-    font-size: 40px;
-}
-
 .endGame {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     margin: auto;
-    width: 400px;
-    height: 400px;
+    top: 100px;
+}
+
+.your-score {
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.endGame-circle {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    width: 350px;
+    height: 350px;
     background-color: rgb(255, 255, 255);
     border-radius: 100%;
     transition: all .5s linear;
-    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .endGame-text {
@@ -126,7 +171,7 @@ body {
     color: rgb(0, 0, 0);
     position: relative;
     text-align: center;
-    top: 90px;
+    top: 60px;
 }
 
 .endGame-button {
@@ -135,5 +180,5 @@ body {
     right: 0;
     width: 100px;
     margin: auto;
-    top: 420px;
+    top: 450px;
 }

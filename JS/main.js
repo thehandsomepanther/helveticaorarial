@@ -216,12 +216,14 @@ function genHelveticaOrArial(num) {
 }
 
 function reset(seed) {
+    $('.guess-buttons').attr('disabled', 'disabled');
     $('.phrase').fadeOut();
     setTimeout(function () {
         $('.phrase').html(genRandomPhrase());
         $('.phrase').css('font-family', genHelveticaOrArial(seed));
     }, 500);
     $('.phrase').fadeIn(500);
+    $('.guess-buttons').removeAttr('disabled');    
 }
 
 function genRandomNumber() {
