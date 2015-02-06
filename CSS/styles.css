@@ -101,7 +101,7 @@ body {
     left: 0;
     right: 0;
     text-align: center;
-    top: -60px;
+    top: -15%;
     font-size: 40px;
 }
 
@@ -115,7 +115,7 @@ body {
     background-color: rgb(255, 255, 255);
     border-radius: 100%;
     transition: all .5s linear;
-    margin-top: 8%;
+    margin-top: 10%;
 }
 
 .endGame-text {
@@ -135,5 +135,5 @@ body {
     right: 0;
     width: 100px;
     margin: auto;
-    top: 450px;
+    top: 420px;
 }
