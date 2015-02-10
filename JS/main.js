@@ -223,7 +223,7 @@ function reset(seed) {
         $('.phrase').css('font-family', genHelveticaOrArial(seed));
     }, 500);
     $('.phrase').fadeIn(500);
-    $('.guess-buttons').removeAttr('disabled');    
+    $('.guess-buttons').removeAttr('disabled');
 }
 
 function genRandomNumber() {
@@ -253,9 +253,9 @@ function restartGame() {
 $(document).ready(function () {
     var num = genRandomNumber();
 
-
     $('.game').hide();
     $('.endGame').hide();
+
     $('.play-button').click(function () {
         $('.intro').fadeOut();
         setTimeout(function () {
@@ -268,6 +268,7 @@ $(document).ready(function () {
     });
 
     $('.helvetica-button').click(function () {
+        $('.helvetica-button').prop('disabled', true);
         if (genHelveticaOrArial(num) === "Helvetica") {
             num = genRandomNumber();
             reset(num);
@@ -281,9 +282,13 @@ $(document).ready(function () {
         if (num_guesses >= 10) {
             endGame();
         }
+        setTimeout(function(){
+            $('.helvetica-button').prop('disabled', false);
+        }, 500);
     });
 
     $('.arial-button').click(function () {
+        $('.arial-button').prop('disabled', true);
         if (genHelveticaOrArial(num) === "Helvetica") {
             num = genRandomNumber();
             reset(num);
@@ -296,6 +301,9 @@ $(document).ready(function () {
         if (num_guesses >= 10) {
             endGame();
         }
+        setTimeout(function(){
+            $('.arial-button').prop('disabled', false);
+        }, 500);
     });
 
     $('.endGame-button').click(function () {
