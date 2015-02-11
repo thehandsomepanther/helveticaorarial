@@ -269,6 +269,7 @@ $(document).ready(function () {
 
     $('.helvetica-button').click(function () {
         $('.helvetica-button').prop('disabled', true);
+        $('.arial-button').prop('disabled', true);
         if (genHelveticaOrArial(num) === "Helvetica") {
             num = genRandomNumber();
             reset(num);
@@ -282,13 +283,17 @@ $(document).ready(function () {
         if (num_guesses >= 10) {
             endGame();
         }
-        setTimeout(function(){
+        setTimeout(function () {
             $('.helvetica-button').prop('disabled', false);
+        }, 500);
+        setTimeout(function () {
+            $('.arial-button').prop('disabled', false);
         }, 500);
     });
 
     $('.arial-button').click(function () {
         $('.arial-button').prop('disabled', true);
+        $('.helvetica-button').prop('disabled', true);
         if (genHelveticaOrArial(num) === "Helvetica") {
             num = genRandomNumber();
             reset(num);
@@ -301,8 +306,11 @@ $(document).ready(function () {
         if (num_guesses >= 10) {
             endGame();
         }
-        setTimeout(function(){
+        setTimeout(function () {
             $('.arial-button').prop('disabled', false);
+        }, 500);
+        setTimeout(function () {
+            $('.helvetica-button').prop('disabled', false);
         }, 500);
     });
 

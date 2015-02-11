@@ -44,13 +44,18 @@ a:active {
 .intro {
     text-align: center;
     font-size: 900%;
-    line-height: 110%;
     position: relative;
     top: 100px;
 }
 
+.helvetica {
+    position: relative;
+    top: -40px;
+    margin-bottom: -50px;
+}
+
 .or-circle {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     margin: auto;
@@ -58,7 +63,7 @@ a:active {
     height: 150px;
     background-color: rgb(255, 255, 255);
     border-radius: 100%;
-    transition: all .5s linear;
+    margin-bottom: -20px;
 }
 
 .or-circle-text {
@@ -68,21 +73,21 @@ a:active {
     font-size: 50%;
     color: rgb(0, 0, 0);
     position: relative;
+    top: 20px;
 }
 
 .arial {
     position: relative;
-    top: 150px;
     font-family: "Arial";
+    margin-bottom: -70px;
 }
 
 .play-button {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     width: 100px;
     margin: auto;
-    top: 450px;
 }
 
 .game-button {
@@ -127,7 +132,7 @@ a:active {
 
 .helvetica-button {
     width: 200px;
-    margin-right: 195px
+    margin-right: 195px;
 }
 
 .arial-button {
@@ -183,4 +188,42 @@ a:active {
     width: 100px;
     margin: auto;
     top: 450px;
+}
+
+@media (max-width: 992px) {
+    .intro {
+        font-size: 500%; 
+    }
+    
+    .phrase {
+        font-size: 500%;   
+    }
+
+    .or-circle {
+        height: 100px;
+        width: 100px;
+        margin-bottom: -10px;
+    }
+    
+    .arial {
+        margin-bottom: -10px;   
+    }
+    
+    .guess-buttons {
+        width: 80%;  
+    }
+    
+    .helvetica-button {
+        width: 150px;
+        float: left;   
+        margin-right: 0;
+        left: 10%;
+    }
+    
+    .arial-button {
+        width: 150px;
+        display: inline;
+        float: right;
+        right: 10%;
+    }
 }
