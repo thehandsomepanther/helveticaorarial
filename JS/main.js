@@ -237,10 +237,10 @@ function genRandomNumber() {
 
 function endGame() {
     $('.game').fadeOut();
-    $('.endGame-text').html(num_correct + "/" + num_guesses);
     setTimeout(function () {
         $('.endGame').fadeIn();
     }, 500);
+    tickUpNumbers(num_correct);
 }
 
 function restartGame() {
@@ -248,6 +248,20 @@ function restartGame() {
     num_correct = 0;
     $('.endGame').hide();
     $('.game').fadeIn();
+}
+
+function tickUpNumbers(num) {
+    $({
+        countNum: 0
+    }).animate({
+        countNum: num
+    }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function () {
+            $('.endGame-text').html(Math.floor(this.countNum) + '/' + num_guesses);
+        }
+    });
 }
 
 $(document).ready(function () {
