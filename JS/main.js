@@ -241,6 +241,11 @@ function endGame() {
         $('.endGame').fadeIn();
     }, 500);
     tickUpNumbers(num_correct);
+    setTimeout(function () {
+        $('.endGame-circle').animate({
+            backgroundColor: "white",
+        }, 50);
+    }, 2000);
 }
 
 function restartGame() {
