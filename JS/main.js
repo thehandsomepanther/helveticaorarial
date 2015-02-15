@@ -221,7 +221,7 @@ function reset(seed) {
     setTimeout(function () {
         $('.phrase').html(genRandomPhrase());
         $('.phrase').css('font-family', genHelveticaOrArial(seed));
-    }, 500);
+    }, 400);
     $('.phrase').fadeIn(500);
     $('.guess-buttons').removeAttr('disabled');
 }
