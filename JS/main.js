@@ -41,7 +41,7 @@ function endGame() {
     setTimeout(function () {
         $('.endGame').fadeIn();
     }, 500);
-    tickUpNumbers(num_correct);
+    tickUpNumbers(num_correct + 1);
     setTimeout(function () {
         $('.endGame-circle').animate({
             backgroundColor: "white",
